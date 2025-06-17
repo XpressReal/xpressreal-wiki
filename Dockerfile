@@ -1,7 +1,7 @@
 # Build stage
 FROM node:20-alpine AS builder
 # Define build argument for source path
-ARG SRC_PATH=.
+ARG SRC_PATH=en
 WORKDIR /app
 # Enable corepack for pnpm
 RUN corepack enable
