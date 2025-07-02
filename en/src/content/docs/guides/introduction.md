@@ -12,8 +12,6 @@ description: The introduction of XpressReal SBC.
 
 ## Photos
 
-![xpressreal](../../../assets/xpressreal-top-bottom.webp)
-
 ## Features
 
 <table>
