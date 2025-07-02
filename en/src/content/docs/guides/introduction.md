@@ -15,12 +15,12 @@ description: The introduction of XpressReal SBC.
 
 ## Guide Documentation
 
-### [Getting started](getting-started.md)
+### [Getting started](/guides/getting-started)
 
-### [openFyde](openfyde.md)
+### [openFyde](/guides/openfyde)
 
-### [Other Systems](other-systems.md)
+### [Other Systems](/guides/other-systems)
 
-### [Building openFyde](building-openfyde.md)
+### [Building openFyde](/guides/building-openfyde)
 
-### [Building Yocto](building-yocto.md)
+### [Building Yocto](/guides/building-yocto)
