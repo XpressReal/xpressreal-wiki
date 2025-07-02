@@ -159,7 +159,7 @@ Fetching of Chromium OS source code may take more than 30 minutes depending on y
 
 Once `gclient sync` is completed, the chromium source folder is now fully set up.
 
-## Build openFyde for amd64
+## Build openFyde for XpressReal
 
 ### Create the chroot
 
