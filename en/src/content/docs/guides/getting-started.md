@@ -8,11 +8,13 @@ description: Quick introduction for how to use XpressReal SBC.
 ### Power Supply
 
 XpressReal can be powered by Type-C connector with 12V input voltage(your PD power supply need to support this voltage), recommended to use a power supply with a rated maximum current greater than 2A.
+
 It also support GbE PoE power supply, you can get power and network connection with a ethernet switch which support PoE.
 
 ### Boot Media
 
 There is no stock firmware in the onboard eMMC, you need to prepare a microSD card with at least 8GB capacity to install the OS image.
+
 If you need to install an image with desktop environment, please use a microSD card with at least 16GB, 32GB is recommended.
 
 ### microSD card reader
@@ -22,6 +24,7 @@ For flashing the system image.
 ### Display
 
 The XpressReal has a HDMI video output port on board, which requires a standard HDMI cable to connect to the monitor.
+
 The resolution of the HDMI output depends on the monitor, and the XpressReal will adjust to the optimal display resolution according to the monitor.
 
 ### Networking
@@ -68,3 +71,7 @@ Make sure you select the correct device, this operation will erase all data on t
 
 * After successfully flashing the microSD card according to the above steps, insert the microSD card into the microSD slot of the XpressReal.
 * Connect keyboard, mouse and monitor then plug the power supply, the system in the microSD card will boot automatically.
+
+## Further reading
+
+- Read [Install openFyde](/guides/openfyde) for how to install openFyde OS.
