@@ -6,4 +6,4 @@ description: How to download and install other OS to XpressReal SBC.
 
 ## Further reading
 
-- Read [Building Yocto](building-yocto.md) for how to build system images using yocto.
+- Read [Building Yocto](/guides/building-yocto) for how to build system images using yocto.
