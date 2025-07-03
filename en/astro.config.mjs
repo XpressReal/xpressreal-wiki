@@ -17,7 +17,7 @@ export default defineConfig({
 						{ label: 'openFyde', slug: 'guides/openfyde' },
 						{ label: 'Other Systems', slug: 'guides/other-systems' },
 						{ label: 'Building openFyde', slug: 'guides/building-openfyde' },
-						{ label: 'Building Yocto', slug: 'guides/building-yocto' },
+						{ label: 'Building Custom Linux', slug: 'guides/building-yocto' },
 					],
 				},
 				{

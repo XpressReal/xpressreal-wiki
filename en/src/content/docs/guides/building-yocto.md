@@ -1,6 +1,6 @@
 ---
-title: Building Yocto
-description: How to use yocto to build other system images for XpressReal SBC.
+title: Building Custom Linux
+description: How to use yocto to build custom Linux system images for XpressReal SBC.
 ---
 
 ## Introduction
