@@ -12,6 +12,8 @@ description: The introduction of XpressReal SBC.
 
 ## Photos
 
+![XpressReal Hardware Interface](../../../assets/xpressreal-interface.webp)
+
 ## Features
 
 <table>
