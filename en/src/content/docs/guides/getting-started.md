@@ -9,8 +9,6 @@ description: Quick introduction for how to use XpressReal SBC.
 
 XpressReal can be powered by Type-C connector with 12V input voltage(your PD power supply need to support this voltage), recommended to use a power supply with a rated maximum current greater than 2A.
 
-It also support GbE PoE power supply, you can get power and network connection with a ethernet switch which support PoE.
-
 ### Boot Media
 
 There is no stock firmware in the onboard eMMC, you need to prepare a microSD card with at least 8GB capacity to install the OS image.
