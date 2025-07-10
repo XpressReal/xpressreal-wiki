@@ -12,7 +12,7 @@ description: The introduction of XpressReal SBC.
 
 ## Photos
 
-![XpressReal Hardware Interface](../../../assets/xpressreal-interface.webp)
+![XpressReal Hardware Interface](../../../assets/xpressreal-photo.webp)
 
 ## Features
 
@@ -27,11 +27,11 @@ description: The introduction of XpressReal SBC.
     </tr>
     <tr>
         <td align="center">CPU</td>
-        <td colspan="2" align="center">Quad-core Cortex-A55, up to 1.7GHz</td>
+        <td colspan="2" align="center">Quad-core ARM Cortex-A55, Up to 2.0GHz</td>
     </tr>
     <tr>
         <td align="center">GPU</td>
-        <td colspan="2" align="center">Arm Mali G57 GPU, supports OpenGL ES 3.2, Vulkan 1.0, and OpenCL 2.0.</td>
+        <td colspan="2" align="center">ARM Mali-G57 MP1, Vulkan 1.1, OpenGL ES 3.2, OpenCL 2.0.</td>
     </tr>
     <tr>
         <td align="center">NPU</td>
@@ -39,20 +39,20 @@ description: The introduction of XpressReal SBC.
     </tr>
     <tr>
         <td align="center">RAM</td>
-        <td colspan="2" align="center">4 GB LPDDR4x</td>
+        <td colspan="2" align="center">LPDDR4 3200MT/s, 4GB</td>
     </tr>
     <tr>
         <td align="center">ROM</td>
         <td align="center">
-            SPI Nor Flash<br/>
+            4MB SPI Flash<br/>
             Onboard eMMC: 32 GB<br/>
             microSD card<br/>
-            M.2 2280
+            M.2 NVMe SSD slot (M-Key)
         </td>
     </tr>
     <tr>
         <td align="center">Display</td>
-        <td colspan="2" align="center">HDMI x 1，4K60p<br/>MIPI DSI</td>
+        <td colspan="2" align="center">1× HDMI 2.1a port，Maximum resolution: 4K@60Hz, HDMI CEC, ARC/eARC, HDCP support<br/>MIPI DSI</td>
     </tr>
     <tr>
         <td align="center">Wireless</td>
@@ -60,7 +60,7 @@ description: The introduction of XpressReal SBC.
     </tr>
     <tr>
         <td align="center">USB</td>
-        <td colspan="2" align="center">USB 3.0 Type-C HOST x1<br/>USB 2.0 Type-A x1</td>
+        <td colspan="2" align="center">1× USB Type-C 3.2 Gen1<br/>1× USB Type-A 2.0</td>
     </tr>
     <tr>
         <td align="center">Other</td>
@@ -82,15 +82,3 @@ description: The introduction of XpressReal SBC.
 ## System Block Diagrams
 
 ![xpressreal-block-diagram](../../../assets/block-diagram.webp)
-
-## Guide Documentation
-
-### [Getting started](/guides/getting-started)
-
-### [openFyde](/guides/openfyde)
-
-### [Other Systems](/guides/other-systems)
-
-### [Building openFyde](/guides/building-openfyde)
-
-### [Building Yocto](/guides/building-yocto)
