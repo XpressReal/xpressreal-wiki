@@ -33,11 +33,9 @@ The XpressReal has a WiFi/BT module on board, which can connect to your wireless
 
 The XpressReal has a onboard Type-C USB3.0 port. Connect a USB hub to this port if you need more USB connections(Eg. keyboard and mouse)
 
-## Install OS(openFyde)
+### openFyde Image Download
 
-### Image Download
-
-Please go to [Download openFyde](#download) to download the openFyde image file.
+Go to [Resource Download](/reference/resource-download/) to download openFyde image file.
 
 ### Prepare Installation Media
 

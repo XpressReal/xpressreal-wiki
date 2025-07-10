@@ -9,7 +9,11 @@ Image flashing tools: [balenaEtcher](https://etcher.balena.io)
 
 ## OS Image
 
-### Custom Linux images
+### openFyde image
+
+[openFyde Image](#download)
+
+### Custom Linux image
 
 [XpressReal Linux Release](https://github.com/xpressreal/linux-sdk/releases)
 

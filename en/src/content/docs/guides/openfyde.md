@@ -1,5 +1,5 @@
 ---
-title: openFyde
+title: Install openFyde
 description: How to download and install openFyde to XpressReal SBC.
 ---
 
@@ -9,7 +9,7 @@ openFyde is an open-source initiative started by Fyde Innovations, the creator o
 
 In a one-liner: openFyde is Chromium OS open-sourced instead of open-core, with or without Google.
 
-## Install
+## Install and setup
 
 With the openFyde boot media inserted into the microSD slot, it will boot automatically when power on the device.
 
