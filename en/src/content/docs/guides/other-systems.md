@@ -67,13 +67,13 @@ sysparam default
 sysparam save
 ```
 
-### 4. Copy image to USB disk
+### 4. Copy image to USB drive
 
-Copy all the files in `image` folder to the root of the USB disk, then plug the USB disk to the USB 3.0 Type-C port.
+Copy all the files in `image` folder to the root of the USB drive, then plug the USB drive to the USB 3.0 Type-C port.
 
 :::caution
 
-Make sure the file system of your USB disk is `FAT32` and the sector size of `FAT32` is `512` because
+Make sure the file system of your USB drive is `FAT32` and the sector size of `FAT32` is `512` because
 the uboot XpressReal used only support this sector size.
 
 Your can prepare the file system with the this command in a Linux console:
@@ -85,7 +85,7 @@ mkfa.vfat -S 512 /dev/sdXXX
 
 ### 5. Install Android to eMMC
 
-Plug the USB disk to XpressReal, type `boot ru` in uboot to start the installation:
+Plug the USB drive to XpressReal, type `boot ru` in uboot to start the installation:
 
 ![Android Install](../../../assets/android/android-install.webp)
 
@@ -93,6 +93,25 @@ Wait for a while, when it finished, XpressReal will reboot to Android.
 
 ![Android desktop](../../../assets/android/android-desktop.webp)
 
+:::note
+
+### Restoring openFyde OS from an Android System
+
+1. Download the `recovery-uboot.zip` archive from the official [Android Image Release](https://github.com/XpressReal/android-image/releases) page.
+
+2. Extract the downloaded `.zip` archive to a folder on your computer.
+
+3. Enter recovery mode by following the instructions in the [Serial Setup](#0-serial-setup) and [Enter Recovery Mode](#1-enter-recovery-mode) sections of the documentation.
+
+4. Press `h`, then upload the `RTD1619B_hwsetting_BOOT_LPDDR4_32Gb_ddp_s1600_final.bin` file using Y-modem protocol.
+
+5. Press `d`, then upload the `rtd1619b_emmc_bind_4gb.bin` file.
+
+6. Press `b1` and `b2` to write uploaded file to `Boot Area 1` and `Boot Area 2` of eMMC.
+
+7. Now u-boot has been restored, you can install openFyde OS according to [Getting Started](/guides/getting-started) and [Install openFyde](/guides/openfyde) guides.
+
+:::
 
 ## Further reading
 
