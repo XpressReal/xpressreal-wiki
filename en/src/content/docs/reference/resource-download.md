@@ -25,8 +25,8 @@ Image flashing tools: [balenaEtcher](https://etcher.balena.io)
 
 ### Schematic
 
-[XpressReal Schematic v1.2](../../../assets/schematic/XpressReal_V1.2.pdf)
+[XpressReal Schematic v1.2](https://github.com/XpressReal/xpressreal/blob/main/hw/XpressReal_V1.2.pdf)
 
-[XpressReal Component Layout Diagram v1.2](../../../assets/schematic/XpressReal_V1.20_component_diagram.pdf)
+[XpressReal Component Layout Diagram v1.2](https://github.com/XpressReal/xpressreal/blob/main/hw/XpressReal_V1.20_component_diagram.pdf)
 
 ### Datasheets
