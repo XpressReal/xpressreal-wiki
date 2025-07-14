@@ -14,10 +14,11 @@ export default defineConfig({
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Introduction', slug: 'guides/introduction' },
 						{ label: 'Getting started', slug: 'guides/getting-started' },
-						{ label: 'openFyde', slug: 'guides/openfyde' },
+						{ label: 'Setup openFyde', slug: 'guides/openfyde' },
 						{ label: 'Other Systems', slug: 'guides/other-systems' },
 						{ label: 'Building openFyde', slug: 'guides/building-openfyde' },
 						{ label: 'Building Custom Linux', slug: 'guides/building-yocto' },
+						{ label: 'Unbrick the XpressReal', slug: 'guides/unbrick' },
 					],
 				},
 				{
