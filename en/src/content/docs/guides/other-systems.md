@@ -14,35 +14,21 @@ Refer to the [Getting Started Guide](/guides/getting-started/) for flashing inst
 
 ## Install Android OS Image
 
-Installing the Android image requires flashing files via the RTD1619B chip's recovery mode. 
-First, ensure the serial port is connected correctly as described in the [Hardware Interface](/reference/hardware-interface/#uart-serial-console) document.
+:::caution
 
-Next, download the Android Image from our Resource Download page and extract the .zip archive. 
+If you have installed Android and want to revert to openFyde or another Linux system, you must do so via "Recovery Mode". 
+This process requires a USB-to-TTL converter. Please ensure you have this device, otherwise you will not be able to switch back from the Android system.
+
+:::
+
+Download the Android Image from our Resource Download page and extract the .zip archive. 
 You will find two folders inside: `lk` and `image`. The contents are used as follows: 
 files in the `lk` folder need to be uploaded to the XpressReal through the serial port, 
 while files in the `image` folder need to be copied to a USB drive.
 
-:::caution
-
-Please ensure that your serial terminal software supports file transfers via the Y-modem protocol.
-For Windows users, we recommend using [Tera Term](https://teratermproject.github.io/index-en.html).
-
-:::
-
-### 0. Serial setup
-
-Connect serial to XpressReal, set the baud rate to `460800` in Tera Term:
-
-![Open Baudrate Setup](../../../assets/android/set-baudrate-menu.webp)
-
-![Setup Baudrate](../../../assets/android/set-baudrate.webp)
-
 ### 1. Enter recovery mode
 
-With baud rate seting up, connect serial port in Tera Term. Pressing `ctrl-q` the power up the XpressReal,
-it will enter recovery mode:
-
-![Recovery Mode](../../../assets/android/recovery-mode.webp)
+Follow the instructions in the [Unbrick the XpressReal](/guides/unbrick) to put your XpressReal into Recovery mode.
 
 ### 2. Upload files with Y-modem
 
@@ -97,19 +83,7 @@ Wait for a while, when it finished, XpressReal will reboot to Android.
 
 ### Restoring openFyde OS from an Android System
 
-1. Download the `recovery-uboot.zip` archive from the official [Android Image Release](https://github.com/XpressReal/android-image/releases) page.
-
-2. Extract the downloaded `.zip` archive to a folder on your computer.
-
-3. Enter recovery mode by following the instructions in the [Serial Setup](#0-serial-setup) and [Enter Recovery Mode](#1-enter-recovery-mode) sections of the documentation.
-
-4. Press `h`, then upload the `RTD1619B_hwsetting_BOOT_LPDDR4_32Gb_ddp_s1600_final.bin` file using Y-modem protocol.
-
-5. Press `d`, then upload the `rtd1619b_emmc_bind_4gb.bin` file.
-
-6. Press `b1` and `b2` to write uploaded file to `Boot Area 1` and `Boot Area 2` of eMMC.
-
-7. Now u-boot has been restored, you can install openFyde OS according to [Getting Started](/guides/getting-started) and [Install openFyde](/guides/openfyde) guides.
+Please refer to the instructions in the [Unbrick the XpressReal](/guides/unbrick) to revert your XpressReal to openFyde OS.
 
 :::
 
