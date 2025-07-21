@@ -71,7 +71,8 @@ mkfs.vfat -S 512 /dev/sdXXX
 
 ### 5. Install Android to eMMC
 
-Plug the USB drive to XpressReal, type `boot ru` in uboot to start the installation:
+Plug the USB drive to XpressReal, type `usb start` to confirm your USB drive has been recognized as `Mass Storage Device`,
+then type `boot ru` in uboot to start the installation:
 
 ![Android Install](../../../assets/android/android-install.webp)
 
