@@ -64,7 +64,7 @@ the uboot XpressReal used only support this sector size.
 
 Your can prepare the file system with the this command in a Linux console:
 ```bash
-mkfa.vfat -S 512 /dev/sdXXX
+mkfs.vfat -S 512 /dev/sdXXX
 ```
 
 :::
@@ -83,7 +83,35 @@ Wait for a while, when it finished, XpressReal will reboot to Android.
 
 ### Restoring openFyde OS from an Android System
 
-Please refer to the instructions in the [Unbrick the XpressReal](/guides/unbrick) to revert your XpressReal to openFyde OS.
+To restore openFyde OS from Android, you need to flash the firmware of the XpressReal to the stock one, 
+then refer to the [Getting Started](/guides/getting-started) guide to install openFyde OS.
+
+Use the following instructions to restore to stock firmware.
+
+* download stock firmware from https://github.com/XpressReal/xpressreal/tree/main/recovery-fw
+
+* connect XpressReal with your computer and copy the downloaded firmware to Android with `adb`
+
+```bash
+adb push Downloads/rtd1619b_emmc_bind_4gb.bin /storage/emulated/0/Download/rtd1619b_emmc_bind_4gb.bin
+```
+
+* flash firmware
+
+```bash
+adb shell # connect to android shell with adb
+su        # change to root
+
+echo 0 > /sys/block/mmcblk0boot0/force_ro # disable eMMC boot area read-only
+echo 0 > /sys/block/mmcblk0boot1/force_ro
+
+dd if=//storage/emulated/0/Download/rtd1619b_emmc_bind_4gb.bin of=/dev/block/mmcblk0boot0 bs=4096 # flash firmware
+dd if=//storage/emulated/0/Download/rtd1619b_emmc_bind_4gb.bin of=/dev/block/mmcblk0boot1 bs=4096
+```
+
+* the firmware of XpressReal has been restored, you can install openFyde OS now
+
+If the Andoird system is broken or adb is not available, please refer to the instructions in the [Unbrick the XpressReal](/guides/unbrick) to revert your XpressReal to openFyde OS.
 
 :::
 
