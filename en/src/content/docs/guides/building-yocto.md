@@ -61,19 +61,29 @@ Fetch Yocto building system(scarthgap branch) from upstream.
 
 ```bash
 $ mkdir yocto
+# clone poky
 $ git clone https://git.yoctoproject.org/poky -b scarthgap
 $ cd poky
-$ git checkout 8637aa34f0
+$ git checkout dabe9e157f
+# clone meta-openembedded
 $ git clone https://github.com/openembedded/meta-openembedded.git -b scarthgap
 $ cd meta-openembedded
-$ git checkout 2338409
+$ git checkout 2338409efc
 ```
 
 ## Fetch dependent meta
 ```bash
 $ cd yocto/poky
+# clone meta-qt5
 $ git clone https://github.com/meta-qt5/meta-qt5.git -b scarthgap
+$ pushd meta-qt5
+$ git checkout eb82841826
+$ popd
+# clone meta-neural-network
 $ git clone https://github.com/nnstreamer/meta-neural-network.git -b scarthgap
+$ pushd meta-neural-network
+$ git checkout c14458c94e
+$ popd
 ```
 
 ## Fetch XpressReal SDK
@@ -81,15 +91,16 @@ $ git clone https://github.com/nnstreamer/meta-neural-network.git -b scarthgap
 Fetch XpressReal SDK from [XpressReal SDK](#sdk-download), then uncompress it to yocto.
 
 ```bash
-$ cd yocto/poky
-$ unzip -d . <path/to/meta-avengers.zip>
+$ cd yocto
+$ git clone https://github.com/XpressReal/linux-sdk
+$ mv linux-sdk/meta-avengers poky/
 ```
 
 ## Building system configuration
 
 ```bash
 $ cd yocto/poky
-$ TEMPLATECONF=meta-avengers/conf/templates/default source oe-init-build-env
+$ TEMPLATECONF=meta-avengers/conf/templates/default source oe-init-build-env build
 ```
 
 ## Build Linux image
@@ -105,17 +116,9 @@ The following bitbake targets are supported:
 | Target                            | Description                                           |
 | --------------------------------- | ----------------------------------------------------- |
 | core-image-minimal                | the minimal image which can boot the SBC              |
-| core-image-weston                 | core-image-minimal + weston                           |
 | debian-image                      | basic debian system without GUI                       |
 
 :::tip
-
-You can add the following line in your `yocto/poky/build/conf/local.conf` file to build `Ubuntu` rootfs image
-with `bitbake debian-image` command.
-
-```
-OVERRIDES:append = ":ubuntu"
-```
 
 If you want to build a image with GUI(XFCE), add the following config to `yocto/poky/build/conf/local.conf`:
 
