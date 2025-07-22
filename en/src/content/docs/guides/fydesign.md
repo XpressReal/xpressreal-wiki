@@ -2,7 +2,6 @@
 title: XpressReal + FydeSign User Guide 
 description: Guide on on how to use the XpressReal + FydeSign solution.
 ---
-# XpressReal + FydeSign User Guide
 
 Welcome to your smart signage journey! With **XpressReal**, a powerful SBC device, and **FydeSign**, FydeOS’s cloud-based media management platform, you can deploy, control, and update multimedia displays remotely—fast and effortlessly.
 
