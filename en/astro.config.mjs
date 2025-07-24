@@ -15,7 +15,6 @@ export default defineConfig({
 						{ label: 'Introduction', slug: 'guides/introduction' },
 						{ label: 'Getting started', slug: 'guides/getting-started' },
 						{ label: 'Setup openFyde', slug: 'guides/openfyde' },
-						{ label: 'Setup FydeSign', slug: 'guides/fydesign'},
 						{ label: 'Other Systems', slug: 'guides/other-systems' },
 						{ label: 'Building openFyde', slug: 'guides/building-openfyde' },
 						{ label: 'Building Custom Linux', slug: 'guides/building-yocto' },
@@ -25,6 +24,12 @@ export default defineConfig({
 				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
+				},
+				{
+					label: 'Recipes',
+					items: [
+						{ label: 'Setup FydeSign', slug: 'recipes/fydesign'},
+					],
 				},
 			],
 			customCss: [
