@@ -93,14 +93,19 @@ Fetch XpressReal SDK from [XpressReal SDK](#sdk-download), then uncompress it to
 ```bash
 $ cd yocto
 $ git clone https://github.com/XpressReal/linux-sdk
-$ mv linux-sdk/meta-avengers poky/
+$ mv linux-sdk/meta-xpressreal poky/
 ```
+
+## Download prebuilt rootfs
+
+Download the prebuilt rootfs from [Prebuilt rootfs](https://github.com/XpressReal/linux-sdk/releases/tag/prebuilt-rootfs),
+place the downloaded prebuilt rootfs files to `meta-xpressreal/recipes-xpressreal/prebuilt-rootfs/files/`.
 
 ## Building system configuration
 
 ```bash
 $ cd yocto/poky
-$ TEMPLATECONF=meta-avengers/conf/templates/default source oe-init-build-env build
+$ TEMPLATECONF=meta-xpressreal/conf/templates/default source oe-init-build-env build
 ```
 
 ## Build Linux image
