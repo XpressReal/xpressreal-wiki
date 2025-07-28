@@ -11,7 +11,7 @@ Image flashing tools: [balenaEtcher](https://etcher.balena.io)
 
 ### openFyde image
 
-[openFyde Image](#download)
+[openFyde Image](https://github.com/openFyde/overlay-xpressreal-openfyde/releases)
 
 ### Custom Linux image
 
