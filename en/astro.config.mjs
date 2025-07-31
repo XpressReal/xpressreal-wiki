@@ -6,7 +6,7 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'XpressReal Wiki',
+			title: 'XpressReal T3 Wiki',
 			sidebar: [
 				{
 					label: 'Guides',
@@ -18,7 +18,7 @@ export default defineConfig({
 						{ label: 'Other Systems', slug: 'guides/other-systems' },
 						{ label: 'Building openFyde', slug: 'guides/building-openfyde' },
 						{ label: 'Building Custom Linux', slug: 'guides/building-yocto' },
-						{ label: 'Unbrick the XpressReal', slug: 'guides/unbrick' },
+						{ label: 'Unbrick the XpressReal T3', slug: 'guides/unbrick' },
 					],
 				},
 				{
