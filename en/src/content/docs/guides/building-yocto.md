@@ -1,13 +1,13 @@
 ---
 title: Building Custom Linux
-description: How to use yocto to build custom Linux system images for XpressReal SBC.
+description: How to use yocto to build custom Linux system images for XpressReal T3 SBC.
 ---
 
 ## Introduction
 
 The Yocto Project is an open-source collaboration project that provides tools and a framework for building custom Linux-based systems for embedded devices. It allows developers to create tailored Linux distributions, regardless of the underlying hardware architecture, and manage software stacks, configurations, and best practices.
 
-This guide will show you how to build custom Linux images for XpressReal with Yocto building system.
+This guide will show you how to build custom Linux images for XpressReal T3 with Yocto building system.
 
 ## System requirement
 
@@ -86,9 +86,9 @@ $ git checkout c14458c94e
 $ popd
 ```
 
-## Fetch XpressReal SDK
+## Fetch XpressReal T3 SDK
 
-Fetch XpressReal SDK from [XpressReal SDK](#sdk-download), then uncompress it to yocto.
+Fetch XpressReal T3 SDK from [XpressReal T3 SDK](#sdk-download), then uncompress it to yocto.
 
 ```bash
 $ cd yocto

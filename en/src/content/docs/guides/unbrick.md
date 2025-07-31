@@ -1,9 +1,9 @@
 ---
-title: Unbrick the XpressReal
-description: Guide on how to unbrick a bricked XpressReal SBC.
+title: Unbrick the XpressReal T3
+description: Guide on how to unbrick a bricked XpressReal T3 SBC.
 ---
 
-Has your XpressReal turned into a brick after a custom firmware experiment gone wrong? Don't worry—this guide will help you bring it back to life.
+Has your XpressReal T3 turned into a brick after a custom firmware experiment gone wrong? Don't worry—this guide will help you bring it back to life.
 
 :::note
 
@@ -14,7 +14,7 @@ Has your XpressReal turned into a brick after a custom firmware experiment gone 
 
 ### Download recovery firmware
 
-Go to [XpressReal FW Repo](https://github.com/XpressReal/xpressreal/tree/main/recovery-fw) to download the recovery firmware.
+Go to [XpressReal T3 FW Repo](https://github.com/XpressReal/xpressreal/tree/main/recovery-fw) to download the recovery firmware.
 
 ### Setup UART serial console
 
@@ -28,7 +28,7 @@ Go to [XpressReal FW Repo](https://github.com/XpressReal/xpressreal/tree/main/re
 
 ### Enter recovery mode
 
-After setting the baud rate for the serial port, connect to it in Tera Term. Press and hold the ctrl-q keys on your keyboard, and then power on the XpressReal. The XpressReal will enter Recovery mode and display the following interface:
+After setting the baud rate for the serial port, connect to it in Tera Term. Press and hold the ctrl-q keys on your keyboard, and then power on the XpressReal T3. The XpressReal T3 will enter Recovery mode and display the following interface:
 
 ![Recovery Mode](../../../assets/android/recovery-mode.webp)
 
@@ -42,4 +42,4 @@ After setting the baud rate for the serial port, connect to it in Tera Term. Pre
 
 ### Done
 
-Congratulations! Your XpressReal has been restored to its factory state. You can now refer to the [Getting Started](/guides/getting-started) guide to install an operating system.
+Congratulations! Your XpressReal T3 has been restored to its factory state. You can now refer to the [Getting Started](/guides/getting-started) guide to install an operating system.

@@ -1,6 +1,6 @@
 ---
 title: Install openFyde
-description: How to download and install openFyde to XpressReal SBC.
+description: How to download and install openFyde to XpressReal T3 SBC.
 ---
 
 ## openFyde

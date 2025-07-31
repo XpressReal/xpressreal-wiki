@@ -1,15 +1,15 @@
 ---
 title: Other Systems
-description: How to download and install other OS to XpressReal SBC.
+description: How to download and install other OS to XpressReal T3 SBC.
 ---
 
-In addition to openFyde, the XpressReal supports other operating systems, such as Linux and Android. 
+In addition to openFyde, the XpressReal T3 supports other operating systems, such as Linux and Android. 
 You can download the OS images from our [Resource Download](/reference/resource-download/) page to 
 experiment with different systems.
 
 ## Install Custom Linux Image
 
-Our Linux OS images are built with the Yocto Project. Use `balenaEtcher` to flash a downloaded image to a microSD card, then boot your XpressReal from it.
+Our Linux OS images are built with the Yocto Project. Use `balenaEtcher` to flash a downloaded image to a microSD card, then boot your XpressReal T3 from it.
 Refer to the [Getting Started Guide](/guides/getting-started/) for flashing instructions.
 
 ## Install Android OS Image
@@ -23,12 +23,12 @@ This process requires a USB-to-TTL converter. Please ensure you have this device
 
 Download the Android Image from our Resource Download page and extract the .zip archive. 
 You will find two folders inside: `lk` and `image`. The contents are used as follows: 
-files in the `lk` folder need to be uploaded to the XpressReal through the serial port, 
+files in the `lk` folder need to be uploaded to the XpressReal T3 through the serial port, 
 while files in the `image` folder need to be copied to a USB drive.
 
 ### 1. Enter recovery mode
 
-Follow the instructions in the [Unbrick the XpressReal](/guides/unbrick) to put your XpressReal into Recovery mode.
+Follow the instructions in the [Unbrick the XpressReal T3](/guides/unbrick) to put your XpressReal T3 into Recovery mode.
 
 ### 2. Upload files with Y-modem
 
@@ -42,7 +42,7 @@ Press `d` in keyboard, then send `boot_emmc.bind.bin` file, when it finished, pr
 
 ### 3. Reboot to uboot
 
-After upload and write those files, replug the power supply to reboot XpressReal, it will enter uboot by default:
+After upload and write those files, replug the power supply to reboot XpressReal T3, it will enter uboot by default:
 
 ![Uboot Prompt](../../../assets/android/uboot-prompt.webp)
 
@@ -60,7 +60,7 @@ Copy all the files in `image` folder to the root of the USB drive, then plug the
 :::caution
 
 Make sure the file system of your USB drive is `FAT32` and the sector size of `FAT32` is `512` because
-the uboot XpressReal used only support this sector size.
+the uboot XpressReal T3 used only support this sector size.
 
 Your can prepare the file system with the this command in a Linux console:
 ```bash
@@ -71,12 +71,12 @@ mkfs.vfat -S 512 /dev/sdXXX
 
 ### 5. Install Android to eMMC
 
-Plug the USB drive to XpressReal, type `usb start` to confirm your USB drive has been recognized as `Mass Storage Device`,
+Plug the USB drive to XpressReal T3, type `usb start` to confirm your USB drive has been recognized as `Mass Storage Device`,
 then type `boot ru` in uboot to start the installation:
 
 ![Android Install](../../../assets/android/android-install.webp)
 
-Wait for a while, when it finished, XpressReal will reboot to Android.
+Wait for a while, when it finished, XpressReal T3 will reboot to Android.
 
 ![Android desktop](../../../assets/android/android-desktop.webp)
 
@@ -84,14 +84,14 @@ Wait for a while, when it finished, XpressReal will reboot to Android.
 
 ### Restoring openFyde OS from an Android System
 
-To restore openFyde OS from Android, you need to flash the firmware of the XpressReal to the stock one, 
+To restore openFyde OS from Android, you need to flash the firmware of the XpressReal T3 to the stock one, 
 then refer to the [Getting Started](/guides/getting-started) guide to install openFyde OS.
 
 Use the following instructions to restore to stock firmware.
 
 * download stock firmware from https://github.com/XpressReal/xpressreal/tree/main/recovery-fw
 
-* connect XpressReal with your computer and copy the downloaded firmware to Android with `adb`
+* connect XpressReal T3 with your computer and copy the downloaded firmware to Android with `adb`
 
 ```bash
 adb push Downloads/rtd1619b_emmc_bind_4gb.bin /storage/emulated/0/Download/rtd1619b_emmc_bind_4gb.bin
@@ -110,9 +110,9 @@ dd if=//storage/emulated/0/Download/rtd1619b_emmc_bind_4gb.bin of=/dev/block/mmc
 dd if=//storage/emulated/0/Download/rtd1619b_emmc_bind_4gb.bin of=/dev/block/mmcblk0boot1 bs=4096
 ```
 
-* the firmware of XpressReal has been restored, you can install openFyde OS now
+* the firmware of XpressReal T3 has been restored, you can install openFyde OS now
 
-If the Andoird system is broken or adb is not available, please refer to the instructions in the [Unbrick the XpressReal](/guides/unbrick) to revert your XpressReal to openFyde OS.
+If the Andoird system is broken or adb is not available, please refer to the instructions in the [Unbrick the XpressReal T3](/guides/unbrick) to revert your XpressReal T3 to openFyde OS.
 
 :::
 

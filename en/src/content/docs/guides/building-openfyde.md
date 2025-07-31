@@ -1,11 +1,11 @@
 ---
 title: Building openFyde
-description: How to setup openFyde building environment for XpressReal SBC.
+description: How to setup openFyde building environment for XpressReal T3 SBC.
 ---
 
 ## Introduction
 
-The following sections of this document describe how to build openFyde for XpressReal SBC, from its source code and the board overlay provided by openFyde.
+The following sections of this document describe how to build openFyde for XpressReal T3 SBC, from its source code and the board overlay provided by openFyde.
 
 ### Typography conventions
 
@@ -159,7 +159,7 @@ Fetching of Chromium OS source code may take more than 30 minutes depending on y
 
 Once `gclient sync` is completed, the chromium source folder is now fully set up.
 
-## Build openFyde for XpressReal
+## Build openFyde for XpressReal T3
 
 ### Create the chroot
 
@@ -232,6 +232,6 @@ We need to write the previously generated disk image onto a USB storage device (
 
 [Chromium OS Developer Guide](https://www.chromium.org/chromium-os/developer-library/guides/development/developer-guide/), This is the official source of how to build Chromium OS
 
-[Getting started](/guides/getting-started/), Guide on how to setup XpressReal and prepare installation media
+[Getting started](/guides/getting-started/), Guide on how to setup XpressReal T3 and prepare installation media
 
 [openFyde installation guide](/guides/openfyde/), Step by step guide on how to install openFyde.

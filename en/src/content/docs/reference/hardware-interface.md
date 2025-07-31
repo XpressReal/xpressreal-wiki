@@ -4,7 +4,7 @@ title: Hardware Interface Description
 
 ## Interface overview
 
-![XpressReal Hardware Interface](../../../assets/xpressreal-interface.webp)
+![XpressReal T3 Hardware Interface](../../../assets/xpressreal-interface.webp)
 
 ## 40-PIN GPIO
 
@@ -16,7 +16,7 @@ title: Hardware Interface Description
 
 #### GPIO Interface
 
-The XpressReal provides a 40 pin GPIO header that is compatible with most peer accessories on the market.
+The XpressReal T3 provides a 40 pin GPIO header that is compatible with most peer accessories on the market.
 
 <div style={{ overflow :"auto" }}>
 
@@ -47,9 +47,9 @@ The XpressReal provides a 40 pin GPIO header that is compatible with most peer a
 
 ## UART Serial Console
 
-Using an USB to TTL converter to connect to the serial port of XpressReal.
+Using an USB to TTL converter to connect to the serial port of XpressReal T3.
 
-| XpressReal SBC  | Connection  | Serial Cable |
+| XpressReal T3 SBC  | Connection  | Serial Cable |
 | --------------- | ----------- | ------------ |
 | **GND** (pin 6) | &lt;---&gt; |    **GND**   |
 | **TX** (pin 8)  | &lt;---&gt; |    **RX**    |
