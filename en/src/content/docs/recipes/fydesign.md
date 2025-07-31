@@ -1,11 +1,11 @@
 --- 
-title: XpressReal + FydeSign User Guide 
-description: Guide on on how to use the XpressReal + FydeSign solution.
+title: XpressReal T3 + FydeSign User Guide 
+description: Guide on on how to use the XpressReal T3 + FydeSign solution.
 ---
 
-Welcome to your smart signage journey! With **XpressReal**, a powerful SBC device, and **FydeSign**, FydeOS’s cloud-based media management platform, you can deploy, control, and update multimedia displays remotely—fast and effortlessly.
+Welcome to your smart signage journey! With **XpressReal T3**, a powerful SBC device, and **FydeSign**, FydeOS’s cloud-based media management platform, you can deploy, control, and update multimedia displays remotely—fast and effortlessly.
 
-Whether it's for retail stores, campuses, buildings, or government offices, this guide walks you through every step to get your XpressReal device enrolled and playing content in no time.
+Whether it's for retail stores, campuses, buildings, or government offices, this guide walks you through every step to get your XpressReal T3 device enrolled and playing content in no time.
 
 ---
 
@@ -17,8 +17,8 @@ Have the following ready:
 
 - An enterprise [FydeOS Management Cloud](https://admin.fydeos.io/) account  
   - If you don’t have one, You only need to fill out a form to [try FydeOS Enterprise Solution](https://fydeos.io/enterprise-solution/request-demo/) for free.
-- An XpressReal device and a monitor  
-![XpressReal Device](https://cdn-web.fydeos.io/Xpressreal_3f6cac8805.jpg)
+- An XpressReal T3 device and a monitor  
+![XpressReal T3 Device](https://cdn-web.fydeos.io/Xpressreal_3f6cac8805.jpg)
 - A Zero-Touch Enrolment (ZTE) system image generated from FydeOS Management Cloud ([How to Generate a ZTE Image](https://enterprise.fydeos.io/wiki/Getting-Started/how_to_create_a_zte_image)) or a standard image downloaded from the official site  
 - A blank SD card (≥ 8 GB recommended)
 
@@ -39,7 +39,7 @@ See [Getting Started](https://wiki.xpressreal.io/guides/getting-started/) for de
 
 ### 🖥️ Step 3: Boot and Install the System
 
-1. Insert the flashed SD card into the XpressReal device.  
+1. Insert the flashed SD card into the XpressReal T3 device.  
 2. Power on the device and enter the installation wizard.  
 3. Follow the prompts to install the system onto the device’s internal storage.  
 4. After installation, remove the SD card and reboot the device.
