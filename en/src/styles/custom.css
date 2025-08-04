@@ -1,11 +1,10 @@
 :root {
-  --sl-hue-accent: 348;  /* 这是 #E40046 的色相值 */
+  --sl-hue-accent: 348;
   --sl-color-accent-low: hsl(var(--sl-hue-accent), 85%, 25%);
   --sl-color-accent: hsl(var(--sl-hue-accent), 89%, 45%);
   --sl-color-accent-high: hsl(var(--sl-hue-accent), 89%, 85%);
 }
 
-/* 亮色模式下的颜色 */
 [data-theme='light'] {
   --sl-color-accent-low: hsl(var(--sl-hue-accent), 85%, 85%);
   --sl-color-accent: hsl(var(--sl-hue-accent), 89%, 45%);

@@ -1,11 +1,11 @@
 ---
 title: Resource download
-description: All kinds of resources for XpressReal T3 in one place.
+description: All kinds of resources for XpressReal SBCs in one place.
 ---
 
 ## Software
 
-Image flashing tools: [balenaEtcher](https://etcher.balena.io)
+Image flashing tool: [balenaEtcher](https://etcher.balena.io)
 
 ## OS Image
 
