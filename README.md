@@ -1,8 +1,8 @@
-# XpressReal T3 Wiki Project 📖
+# XpressReal Wiki Project 📖
 
-Welcome to the XpressReal T3 Wiki Project—the definitive guide for all things about XpressReal T3.
+Welcome to the XpressReal Wiki Project—the definitive guide for all things about XpressReal Single Board Computers.
 
-The XpressReal T3 Wiki serves as a detailed knowledge base, offering support and insights to XpressReal T3 users. It encompasses setup instructions, troubleshooting advice, and advanced usage tips.
+The XpressReal Wiki serves as a detailed knowledge base, offering support and insights to XpressReal users. It encompasses setup instructions, troubleshooting advice, and advanced usage tips.
 
 ## Contributing 🤝
 
@@ -10,4 +10,4 @@ We rely on your contributions to enrich this project. Enhance the wiki by refini
 
 ## Join Us 🌍
 
-Contributing to the XpressReal T3 Wiki connects you with a community focused on improving the XpressReal T3 experience. We appreciate your participation and contributions!
+Contributing to the XpressReal Wiki connects you with a community focused on improving the XpressReal experience. We appreciate your participation and contributions!
