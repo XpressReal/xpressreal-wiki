@@ -5,7 +5,8 @@ description: The introduction of XpressReal T3 SBC.
 
 ## Product Description
 
-- XpressReal T3 is a small form factor high performance single board computer based on the Realtek RTD1619B, which runs FydeOS/openFyde and Linux!
+- XpressReal is a family of Single Board Computers developed in collaboration between Fyde Innovations, Radxa and Realtek.
+- XpressReal T3 is the first product in the family - a small form factor high performance single board computer powered by the Realtek RTD1619B, which runs FydeOS/openFyde and Linux!
 - Equipped with a Quad-core Cortex-A55 processor, up to 4GB LPDDR4x memory and 32GB eMMC.
 - Support 4K HDMI output, WiFi6 + BT 5.4, onboard USB3.0, M.2 2280 SSD and 40-pin GPIO interface.
 - USB-C PD and GbE with Passive PoE power supply support. 

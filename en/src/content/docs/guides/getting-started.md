@@ -3,6 +3,11 @@ title: Getting started
 description: Quick introduction for how to use XpressReal T3 SBC.
 ---
 
+## Introduction and overview
+
+XpressReal T3 is the first SBC in the XpressReal family. Developed in collaboration between Fyde Innovations, Radxa and Realtek, XpressReal T3 is a compact SBC powered by the advanced RTD1619B SoC — delivering robust performance, seamless media processing, extensive developer resources with comprehensive SDK and OS support, and top-tier connectivity in a palm-sized package. Engineered for flexibility, it's the perfect companion for FydeOS Enterprise Kiosk solutions and beyond.
+
+
 ## Preparation
 
 ### Power Supply
@@ -70,4 +75,4 @@ Make sure you select the correct device, this operation will erase all data on t
 
 ## Further reading
 
-- Read [Install openFyde](/guides/openfyde) for how to install openFyde OS.
+- Read [Install openFyde](/guides/openfyde) for how to install openFyde.

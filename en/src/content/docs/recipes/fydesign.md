@@ -3,7 +3,7 @@ title: XpressReal T3 + FydeSign User Guide
 description: Guide on on how to use the XpressReal T3 + FydeSign solution.
 ---
 
-Welcome to your smart signage journey! With **XpressReal T3**, a powerful SBC device, and **FydeSign**, FydeOS’s cloud-based media management platform, you can deploy, control, and update multimedia displays remotely—fast and effortlessly.
+Welcome to your smart signage journey! With **XpressReal T3**, a powerful SBC device, and **FydeSign**, FydeOS's cloud-based media management platform, you can deploy, control, and update multimedia displays remotely—fast and effortlessly.
 
 Whether it's for retail stores, campuses, buildings, or government offices, this guide walks you through every step to get your XpressReal T3 device enrolled and playing content in no time.
 
