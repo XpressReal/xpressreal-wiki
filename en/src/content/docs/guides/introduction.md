@@ -40,14 +40,14 @@ description: The introduction of XpressReal T3 SBC.
     </tr>
     <tr>
         <td align="center">RAM</td>
-        <td colspan="2" align="left">LPDDR4 3200MT/s, 4GB</td>
+        <td colspan="2" align="left">LPDDR4 3200Mbps, 4GB</td>
     </tr>
     <tr>
         <td align="center">ROM</td>
         <td colspan="2" align="left">
             4MB SPI Flash<br/>
             Onboard eMMC: 32 GB<br/>
-            microSD card<br/>
+            microSD card slot<br/>
             M.2 NVMe SSD slot (M-Key)
         </td>
     </tr>
