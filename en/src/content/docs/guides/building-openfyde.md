@@ -167,7 +167,7 @@ As mentioned above, a chroot environment will be used to run the actual build pr
 
 ```bash
 (outside)
-$ cd r102
+$ cd r132
 $ cros_sdk --chrome-root $HOME/r132/openfyde/chromium #absolute path needed
 ```
 
