@@ -28,7 +28,7 @@ description: The introduction of XpressReal T3 SBC.
     </tr>
     <tr>
         <td align="center">CPU</td>
-        <td colspan="2" align="left">Quad-core ARM Cortex-A55, Up to 2.0GHz</td>
+        <td colspan="2" align="left">Quad-core ARM Cortex-A55, Up to 1.7GHz</td>
     </tr>
     <tr>
         <td align="center">GPU</td>
