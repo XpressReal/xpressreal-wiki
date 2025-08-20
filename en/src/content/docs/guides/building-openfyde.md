@@ -234,4 +234,4 @@ We need to write the previously generated disk image onto a USB storage device (
 
 [Getting started](/guides/getting-started/), Guide on how to setup XpressReal T3 and prepare installation media
 
-[openFyde installation guide](/guides/openfyde/), Step by step guide on how to install openFyde.
+[openFyde installation guide](/guides/openfyde-fydeos/), Step by step guide on how to install openFyde.

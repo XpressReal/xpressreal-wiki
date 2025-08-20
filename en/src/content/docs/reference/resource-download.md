@@ -13,6 +13,14 @@ Image flashing tool: [balenaEtcher](https://etcher.balena.io)
 
 [openFyde Image](https://github.com/openFyde/overlay-xpressreal-openfyde/releases)
 
+### FydeOS image
+
+[FydeOS Image](https://fydeos.io/download/device/xpressreal-fydeos/)
+
+### Home Assistant Operating System (HAOS) image
+
+[Home Assistant Operating System (HAOS) Image](https://github.com/XpressReal/Home-Assistant-Operating-System/)
+
 ### Custom Linux image
 
 [XpressReal T3 Linux Release](https://github.com/xpressreal/linux-sdk/releases)

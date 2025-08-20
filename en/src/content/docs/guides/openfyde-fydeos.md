@@ -1,19 +1,23 @@
 ---
-title: Install openFyde
-description: How to download and install openFyde to XpressReal T3 SBC.
+title: Install openFyde/FydeOS
+description: How to download and install openFyde/FydeOS to XpressReal T3 SBC.
 ---
 
-## openFyde
+## openFyde/FydeOS
 
 openFyde is an open-source initiative started by Fyde Innovations, the creator of FydeOS, with an aim to provide another approach to Chromium OS. With openFyde, you can have a more open and flexible Chromium OS. At Fyde Innovations we believe with more choices comes greater possibilities.
 
 In a one-liner: openFyde is Chromium OS open-sourced instead of open-core, with or without Google.
 
+FydeOS is based on openFyde, with proprietary/commercial/licensed packages that are not included in openFyde, providing a more complete and stable experience.
+
 ## Install and setup
+
+> The following steps use openFyde as an example, as the installation method is almost the same for openFyde and FydeOS.
 
 With the openFyde boot media inserted into the microSD slot, it will boot automatically when power on the device.
 
-The following section with guide you to install openFyde into the onboard eMMC storage step by step.
+The following section with guide you to install openFyde/FydeOS into the onboard eMMC storage step by step.
 
 ### Select language
 

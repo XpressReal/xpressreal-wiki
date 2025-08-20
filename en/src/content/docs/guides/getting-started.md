@@ -38,9 +38,9 @@ The XpressReal T3 has a WiFi/BT module on board, which can connect to your wirel
 
 The XpressReal T3 has a onboard Type-C USB3.0 port. Connect a USB hub to this port if you need more USB connections(Eg. keyboard and mouse)
 
-### openFyde Image Download
+### openFyde/FydeOS Image Download
 
-Go to [Resource Download](/reference/resource-download/) to download openFyde image file.
+Go to [Resource Download](/reference/resource-download/) to download openFyde/FydeOS image file.
 
 ### Prepare Installation Media
 
@@ -75,4 +75,4 @@ Make sure you select the correct device, this operation will erase all data on t
 
 ## Further reading
 
-- Read [Install openFyde](/guides/openfyde) for how to install openFyde.
+- Read [Install openFyde/FydeOS](/guides/openfyde-fydeos) for how to install openFyde/FydeOS.

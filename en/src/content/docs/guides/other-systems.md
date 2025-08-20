@@ -3,7 +3,7 @@ title: Other Systems
 description: How to download and install other OS to XpressReal T3 SBC.
 ---
 
-In addition to openFyde, the XpressReal T3 supports other operating systems, such as Linux and Android. 
+In addition to openFyde/FydeOS, the XpressReal T3 supports other operating systems, such as Linux and Android. 
 You can download the OS images from our [Resource Download](/reference/resource-download/) page to 
 experiment with different systems.
 
@@ -11,6 +11,14 @@ experiment with different systems.
 
 Our Linux OS images are built with the Yocto Project. Use `balenaEtcher` to flash a downloaded image to a microSD card, then boot your XpressReal T3 from it.
 Refer to the [Getting Started Guide](/guides/getting-started/) for flashing instructions.
+
+## Install Home Assistant Operating System (HAOS) Image
+
+Home Assistant is an open-source home automation platform that prioritises local control and privacy. It is powered by a global community of tinkerers and DIY enthusiasts, and is perfect for running on the XpressReal T3.
+
+Home Assistant Operating System (formerly HassOS) is a Linux-based system optimised to host Home Assistant and its add-ons. We've built HAOS images for XpressReal T3.
+
+For more information, refer to our open-source [GitHub repository](https://github.com/XpressReal/Home-Assistant-Operating-System).
 
 ## Install Android OS Image
 
