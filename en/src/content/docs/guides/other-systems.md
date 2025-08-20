@@ -3,9 +3,7 @@ title: Other Systems
 description: How to download and install other OS to XpressReal T3 SBC.
 ---
 
-In addition to openFyde/FydeOS, the XpressReal T3 supports other operating systems, such as Linux and Android. 
-You can download the OS images from our [Resource Download](/reference/resource-download/) page to 
-experiment with different systems.
+In addition to openFyde/FydeOS, the XpressReal T3 supports other operating systems, such as Linux and Android. The list of supported OS will be constantly updated, with new entries being added from time to time. You can check the latest available OS images from our [Resource Download](/reference/resource-download/) page to experiment with different systems.
 
 ## Install Custom Linux Image
 
@@ -20,11 +18,12 @@ Home Assistant Operating System (formerly HassOS) is a Linux-based system optimi
 
 For more information, refer to our open-source [GitHub repository](https://github.com/XpressReal/Home-Assistant-Operating-System).
 
-## Install Android OS Image
+## Install Android Image
 
 :::caution
 
 If you have installed Android and want to revert to openFyde or another Linux system, you must do so via "Recovery Mode". 
+
 This process requires a USB-to-TTL converter. Please ensure you have this device, otherwise you will not be able to switch back from the Android system.
 
 :::
@@ -79,20 +78,20 @@ mkfs.vfat -S 512 /dev/sdXXX
 
 ### 5. Install Android to eMMC
 
-Plug the USB drive to XpressReal T3, type `usb start` to confirm your USB drive has been recognized as `Mass Storage Device`,
+Plug the USB drive to XpressReal T3, type `usb start` to confirm your USB drive has been recognised as `Mass Storage Device`,
 then type `boot ru` in uboot to start the installation:
 
 ![Android Install](../../../assets/android/android-install.webp)
 
-Wait for a while, when it finished, XpressReal T3 will reboot to Android.
+Wait for a while, when it finishes, XpressReal T3 will reboot to Android.
 
 ![Android desktop](../../../assets/android/android-desktop.webp)
 
 :::note
 
-### Restoring openFyde OS from an Android System
+### Restoring openFyde from an Android System
 
-To restore openFyde OS from Android, you need to flash the firmware of the XpressReal T3 to the stock one, 
+To restore openFyde from Android, you need to flash the firmware of the XpressReal T3 to the stock one, 
 then refer to the [Getting Started](/guides/getting-started) guide to install openFyde OS.
 
 Use the following instructions to restore to stock firmware.
@@ -118,12 +117,12 @@ dd if=//storage/emulated/0/Download/rtd1619b_emmc_bind_4gb.bin of=/dev/block/mmc
 dd if=//storage/emulated/0/Download/rtd1619b_emmc_bind_4gb.bin of=/dev/block/mmcblk0boot1 bs=4096
 ```
 
-* the firmware of XpressReal T3 has been restored, you can install openFyde OS now
+* the firmware of XpressReal T3 has been restored, you can install openFyde now
 
-If the Andoird system is broken or adb is not available, please refer to the instructions in the [Unbrick the XpressReal T3](/guides/unbrick) to revert your XpressReal T3 to openFyde OS.
+If the Android system is broken or adb is not available, please refer to the instructions in the [Unbrick the XpressReal T3](/guides/unbrick) to revert your XpressReal T3 to openFyde.
 
 :::
 
 ## Further reading
 
-- Read [Building Custom Linux](/guides/building-yocto) for how to build system images using yocto.
+- Read [Building Custom Linux](/guides/building-yocto) for how to build system images using Yocto.

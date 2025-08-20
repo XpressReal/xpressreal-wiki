@@ -3,31 +3,49 @@ title: Resource download
 description: All kinds of resources for XpressReal SBCs in one place.
 ---
 
-## Software
+## Utilities
 
 Image flashing tool: [balenaEtcher](https://etcher.balena.io)
 
-## OS Image
+<br>
+<br>
 
-### openFyde image
+## Available OSes
 
-[openFyde Image](https://github.com/openFyde/overlay-xpressreal-openfyde/releases)
+### openFyde
 
-### FydeOS image
+[openFyde releases](https://github.com/openFyde/overlay-xpressreal-openfyde/releases)
 
-[FydeOS Image](https://fydeos.io/download/device/xpressreal-fydeos/)
+<br>
 
-### Home Assistant Operating System (HAOS) image
+### FydeOS
 
-[Home Assistant Operating System (HAOS) Image](https://github.com/XpressReal/Home-Assistant-Operating-System/)
+[FydeOS download page](https://fydeos.io/download/device/xpressreal-fydeos/)
+
+<br>
+
+### Home Assistant Operating System (HAOS)
+
+[Home Assistant Operating System releases](https://github.com/XpressReal/Home-Assistant-Operating-System/)
+
+<br>
+
+### Armbian
+To be added soon
 
 ### Custom Linux image
 
-[XpressReal T3 Linux Release](https://github.com/xpressreal/linux-sdk/releases)
+[XpressReal T3 Linux releases](https://github.com/xpressreal/linux-sdk/releases)
+
+<br>
 
 ### Android image
 
-[XpressReal T3 Android Release](https://github.com/xpressreal/android-image/releases)
+[XpressReal T3 Android releases](https://github.com/xpressreal/android-image/releases)
+
+
+<br>
+<br>
 
 ## Hardware References
 
