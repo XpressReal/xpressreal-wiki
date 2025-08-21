@@ -26,7 +26,7 @@ Image flashing tool: [balenaEtcher](https://etcher.balena.io)
 
 ### Home Assistant Operating System (HAOS)
 
-[Home Assistant Operating System releases](https://github.com/XpressReal/Home-Assistant-Operating-System/)
+[Home Assistant Operating System releases](https://github.com/XpressReal/Home-Assistant-Operating-System/releases/)
 
 <br>
 
