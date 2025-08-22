@@ -29,6 +29,7 @@ export default defineConfig({
 					label: 'Recipes',
 					items: [
 						{ label: 'Setup FydeSign', slug: 'recipes/fydesign'},
+						{ label: 'Setup Home Assistant OS', slug: 'recipes/haos'},
 					],
 				},
 			],
