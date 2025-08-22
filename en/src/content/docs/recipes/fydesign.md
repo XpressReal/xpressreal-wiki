@@ -73,7 +73,7 @@ After enrollment, the device is placed in the same organizational unit (default 
 
 
 
-### 2. FydeSign auto-lunched Logic
+### 2. FydeSign auto-launched Logic
 
 The device must be in the organizational unit where the auto-launch app is configured in order to automatically start the Kiosk app.
 
@@ -84,7 +84,7 @@ The device must be in the organizational unit where the auto-launch app is confi
 3. Click the device to open the details page, then click "Move To” under the Operation section.
 ![Device Operation](https://cdn-web.fydeos.com/Device_Operation_989c8b2811.png)
 4. Select the target OU and confirm.  
-5. **Reboot the device or wait for a moment** to apply the OU change and auto-lunched settings.  
+5. **Reboot the device or wait for a moment** to apply the OU change and auto-launched settings.  
  
 
 If FydeSign is already set as the auto-launch app for this OU, and the device belongs to the same OU, the screen will appear in **FydeSign › Screens**.
@@ -94,11 +94,11 @@ If FydeSign is already set as the auto-launch app for this OU, and the device be
 
 ## III. FydeSign Configuration and Usage
 
-### 🎯 Step 1： Set FydeSign as the auto-lunched App
+### 🎯 Step 1： Set FydeSign as the auto-launched App
 
   1. Sign in to [FydeOS Management Cloud](https://admin.fydeos.io).  
   2. Navigate to **Kiosk › Apps**.  
-  3. In the desired OU, set **FydeSign** as the auto-lunched application.
+  3. In the desired OU, set **FydeSign** as the auto-launched application.
 
   <video controls width="100%" height="auto">
     <source src="https://cdn-web.fydeos.io/Set_auto_launch_app_280453b272.mp4" type="video/mp4">

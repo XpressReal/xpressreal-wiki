@@ -3,9 +3,17 @@ title: Setup Home Assistant OS
 description: Guide on how to setup the Home Assistant OS (HAOS) on XpressReal T3.
 ---
 
-## What you’ll need
+## Support status
 
-### Hardware
+This port is **community/experimental** and the T3 is **not listed** among the officially supported HAOS hardware families (e.g. Raspberry Pi, ODROID, Generic x86-64). Expect occasional quirks and always keep backups.
+
+---
+
+## Preparation
+
+### What you’ll need
+
+**Hardware:**
 
 - **XpressReal T3** board
 - **Power supply** that meets board spec
@@ -14,30 +22,23 @@ description: Guide on how to setup the Home Assistant OS (HAOS) on XpressReal T3
 - **Network**: Ethernet cable (recommended) or Wi‑Fi
 - *(Optional)* HDMI display + USB keyboard (for local console), USB Zigbee/Z‑Wave dongles, etc.
 
-### Software
+**Software:**
 
 - **HAOS image for XpressReal T3** — download from our [GitHub Releases page](https://github.com/XpressReal/home-assistant-operating-system/releases)
 - **balenaEtcher** (Windows/macOS/Linux) or **Rufus** (Windows)
 - *(Optional)* SSH client (for add‑on shell access later)
 
----
-
-## Download & verify
+### Get the image and flash
 
 1. Download the latest **HAOS for XpressReal T3** image (and its checksum file if provided).
 2. Verify the checksum to ensure the download isn’t corrupted (recommended).
+3. Insert the microSD/SSD (via USB adapter) into your computer.
+4. Open **balenaEtcher** → *Flash from file* → select the HAOS image → select the target drive → **Flash**.
+5. Safely eject when done.
 
 ---
 
-## Flash the image
-
-1. Insert the microSD/SSD (via USB adapter) into your computer.
-2. Open **balenaEtcher** → *Flash from file* → select the HAOS image → select the target drive → **Flash**.
-3. Safely eject when done.
-
----
-
-## Optional: Pre‑configure Wi‑Fi (headless mode)
+### Optional: Pre‑configure Wi‑Fi (headless mode)
 
 Ethernet is recommended for the first boot. If you must use Wi‑Fi, HAOS supports a NetworkManager keyfile named `my-network` placed on the `CONFIG/network/` folder of the flashed media.
 
@@ -89,7 +90,9 @@ Ethernet is recommended for the first boot. If you must use Wi‑Fi, HAOS suppor
 
 ---
 
-## First boot
+## First boot & access
+
+### First boot
 
 1. Insert the flashed microSD into the **T3**.
 2. Connect **Ethernet** (recommended) or rely on your pre‑configured Wi‑Fi.
@@ -117,20 +120,14 @@ In the version v0.1, there's a bug that results in failed network connections. T
     systemctl restart systemd-timesyncd
     ```
 
----
-
-## Access the web UI
+### Access the web UI and onboarding
 
 On a device in the same network:
 
 - Try **[http://homeassistant.local:8123](http://homeassistant.local:8123)**
 - If mDNS isn’t working, open your router’s DHCP client list and find the T3’s IP, then visit **http://<T3_IP>:8123**
 
-You should see the onboarding wizard.
-
----
-
-## Onboarding (initial setup)
+You should see the onboarding wizard, then:
 
 1. Create your **Home Assistant user** (username + strong password).
 2. Set **location, time zone, units**.
@@ -144,7 +141,9 @@ You should see the onboarding wizard.
 
 ---
 
-## Move data to an SSD (recommended)
+## Post‑install
+
+### Move data to an SSD (recommended)
 
 If you boot from microSD, you can move the **data disk** to a more durable SSD for longevity.
 
@@ -162,7 +161,7 @@ The system will migrate and reboot.
 
 ---
 
-## Add common integrations
+### Integrations & add‑ons
 
 Open **Settings → Devices & Services → Add Integration**. Popular choices:
 
@@ -173,9 +172,7 @@ Open **Settings → Devices & Services → Add Integration**. Popular choices:
 - **Cameras**: ONVIF/RTSP, or **Frigate** add‑on for local AI detection (requires supported accelerators)
 - **Voice assistants**: Google Assistant, Alexa; or explore local options
 
----
-
-## Recommended add‑ons (Supervisor → Add‑on Store)
+Common add‑ons (Supervisor → Add‑on Store):
 
 - **File editor** — edit configuration.yaml in the browser
 - **Samba share** — access HA files from your PC
@@ -188,14 +185,14 @@ Open **Settings → Devices & Services → Add Integration**. Popular choices:
 
 ---
 
-## Remote access options
+### Remote access options
 
 - **Nabu Casa (Home Assistant Cloud)** — easiest, secure remote access and voice assistant integrations (paid subscription).
 - **DIY** — reverse proxy (NGINX/Caddy), WireGuard/Tailscale VPN, or router‑level port forwarding (ensure TLS and strong authentication).
 
 ---
 
-## Power, reliability & housekeeping
+### Power, reliability & housekeeping
 
 - Prefer **Ethernet** over Wi‑Fi for stability.
 - Use a **quality power supply**; under‑voltage causes weird crashes.
@@ -205,7 +202,9 @@ Open **Settings → Devices & Services → Add Integration**. Popular choices:
 
 ---
 
-## Troubleshooting
+## Troubleshooting & FAQ
+
+### Troubleshooting
 
 **Can’t reach the UI**
 
@@ -232,27 +231,19 @@ Open **Settings → Devices & Services → Add Integration**. Popular choices:
 - Local console over HDMI/USB keyboard: login as root to use the **HA CLI** (e.g. ha os info, ha core restart).
 - For remote shell, install the **SSH & Web Terminal** add‑on.
 
----
+### FAQ
 
-## Support status
+**Can I run other services alongside HAOS?**
 
-This port is **community/experimental** and the T3 is **not listed** among the officially supported HAOS hardware families (e.g. Raspberry Pi, ODROID, Generic x86-64). Expect occasional quirks and always keep backups.
+HAOS is designed as an appliance. If you want to co‑host multiple apps, consider an x86 mini‑PC with Docker, or run **Home Assistant Container** instead. On HAOS, use add‑ons where possible.
 
----
+**Do I lose data if I re‑flash?**
 
-## FAQ
+If you overwrite the data disk, yes. Always create backups and store them off the device. You can restore during onboarding or from *Settings → System → Backups*.
 
-**Q: Can I run other services alongside HAOS?**
+**Is Wi‑Fi reliable enough?**
 
-A: HAOS is designed as an appliance. If you want to co‑host multiple apps, consider an x86 mini‑PC with Docker, or run **Home Assistant Container** instead. On HAOS, use add‑ons where possible.
-
-**Q: Do I lose data if I re‑flash?**
-
-A: If you overwrite the data disk, yes. Always create backups and store them off the device. You can restore during onboarding or from *Settings → System → Backups*.
-
-**Q: Is Wi‑Fi reliable enough?**
-
-A: It works, but Ethernet is more robust for a 24/7 home hub. If you must use Wi‑Fi, ensure good signal and correct country/regs.
+It works, but Ethernet is more robust for a 24/7 home hub. If you must use Wi‑Fi, ensure good signal and correct country/regs.
 
 ---
 
