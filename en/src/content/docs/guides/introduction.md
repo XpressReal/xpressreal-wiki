@@ -53,7 +53,7 @@ description: The introduction of XpressReal T3 SBC.
     </tr>
     <tr>
         <td align="center">Display</td>
-        <td colspan="2" align="left">HDMI 2.1a 4K@60Hz, HDMI CEC, ARC/eARC, HDCP support<br/>MIPI DSI</td>
+        <td colspan="2" align="left">HDMI 2.1a 4K@60Hz, HDMI CEC support<br/>MIPI DSI</td>
     </tr>
     <tr>
         <td align="center">Wireless</td>
@@ -79,7 +79,3 @@ description: The introduction of XpressReal T3 SBC.
         <td colspan="2" align="left">96mm x 40mm</td>
     </tr>
 </table>
-
-## System Block Diagrams
-
-![xpressreal-block-diagram](../../../assets/block-diagram.webp)

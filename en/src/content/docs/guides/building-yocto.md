@@ -121,14 +121,14 @@ The following bitbake targets are supported:
 | Target                            | Description                                           |
 | --------------------------------- | ----------------------------------------------------- |
 | core-image-minimal                | the minimal image which can boot the SBC              |
+| core-image-weston                 | minimal image with weston support                     |
 | debian-image                      | basic debian system without GUI                       |
 
 :::tip
 
-If you want to build a image with GUI(XFCE), add the following config to `yocto/poky/build/conf/local.conf`:
+the `debian-image` target can generate different images based on the configuration in `yocto/poky/build/conf/local.conf`:
 
-```
-MACHINE_FEATURES:append = " xdesktop"
-```
+* `OVERRIDES:append = ":ubuntu"`: generate image with `ubuntu` rootfs instead of `debian`
+* `MACHINE_FEATURES:append = " xdesktop"`: generate image with GUI support
 
 :::
