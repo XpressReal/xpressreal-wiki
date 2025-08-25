@@ -5,7 +5,7 @@ description: Guide on how to setup the Home Assistant OS (HAOS) on XpressReal T3
 
 ## Support status
 
-This port is **community/experimental** and the T3 is **not listed** among the officially supported HAOS hardware families (e.g. Raspberry Pi, ODROID, Generic x86-64). Expect occasional quirks and always keep backups.
+This port is **experimental** and the T3 is **not listed** among the officially supported HAOS hardware families (e.g. Raspberry Pi, ODROID, Generic x86-64). Expect occasional quirks and always keep backups.
 
 ---
 
@@ -21,6 +21,8 @@ This port is **community/experimental** and the T3 is **not listed** among the o
 - **Card reader** (for flashing)
 - **Network**: Ethernet cable (recommended) or Wi‑Fi
 - *(Optional)* HDMI display + USB keyboard (for local console), USB Zigbee/Z‑Wave dongles, etc.
+
+![T3 board](../../../assets/haos/xpressreal.webp)
 
 **Software:**
 
@@ -41,6 +43,8 @@ This port is **community/experimental** and the T3 is **not listed** among the o
 ### Optional: Pre‑configure Wi‑Fi (headless mode)
 
 Ethernet is recommended for the first boot. If you must use Wi‑Fi, HAOS supports a NetworkManager keyfile named `my-network` placed on the `CONFIG/network/` folder of the flashed media.
+
+![path](../../../assets/haos/my-network-path.webp)
 
 1. After flashing, re‑insert the card/drive so your OS mounts the `hassos-boot` partition.
     - On macOS, mount the `hassos-boot` partition as follows:
@@ -103,7 +107,11 @@ If you have a monitor connected, you’ll see the HAOS console. Otherwise, conti
 
 **Notes:**
 
-In the version v0.1, there's a bug that results in failed network connections. The reason behind is that the NTP server was not set correctly. You may need to access the Home Assistant CLI to solve it after booting. The detailed steps are as follows:
+In the version v0.1, there's a bug that results in failed network connections, which may cause the web UI stuck in the loading state.
+
+![ha-loading](../../../assets/haos/ha-loading.webp)
+
+The reason behind is that the NTP server was not set correctly. You may need to access the Home Assistant CLI to solve it after booting. The detailed steps are as follows:
 
 1. After the Home Assistant CLI is ready, type `login` in the console.
 2. Type the following commands to edit the `/etc/systemd/timesyncd.conf` 
@@ -126,6 +134,8 @@ On a device in the same network:
 
 - Try **[http://homeassistant.local:8123](http://homeassistant.local:8123)**
 - If mDNS isn’t working, open your router’s DHCP client list and find the T3’s IP, then visit **http://<T3_IP>:8123**
+
+![ha-welcome](../../../assets/haos/ha-welcome.webp)
 
 You should see the onboarding wizard, then:
 
