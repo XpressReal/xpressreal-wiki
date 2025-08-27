@@ -10,6 +10,10 @@ In addition to openFyde/FydeOS, the XpressReal T3 supports other operating syste
 Our Linux OS images are built with the Yocto Project. Use `balenaEtcher` to flash a downloaded image to a microSD card, then boot your XpressReal T3 from it.
 Refer to the [Getting Started Guide](/guides/getting-started/) for flashing instructions.
 
+## Install Armbian Image
+
+Armbian is a Debian-based Linux distribution that is optimised for ARM-based single-board computers (SBCs). It is a popular choice for developers and enthusiasts who want to run Linux on their XpressReal T3. You can download the image from our [GitHub Releases](https://github.com/XpressReal/armbian-build/releases) page and flash it to a microSD card using `balenaEtcher`. Then, boot your XpressReal T3 from the microSD card.
+
 ## Install Home Assistant Operating System (HAOS) Image
 
 Home Assistant is an open-source home automation platform that prioritises local control and privacy. It is powered by a global community of tinkerers and DIY enthusiasts, and is perfect for running on the XpressReal T3.

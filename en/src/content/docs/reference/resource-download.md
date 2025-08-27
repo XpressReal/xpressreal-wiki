@@ -31,7 +31,10 @@ Image flashing tool: [balenaEtcher](https://etcher.balena.io)
 <br>
 
 ### Armbian
-To be added soon
+
+[Armbian releases](https://github.com/XpressReal/armbian-build/releases/tag/v0.1.0-alpha)
+
+<br>
 
 ### Custom Linux image
 
