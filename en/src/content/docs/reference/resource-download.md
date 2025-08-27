@@ -32,13 +32,15 @@ Image flashing tool: [balenaEtcher](https://etcher.balena.io)
 
 ### Armbian
 
-[Armbian releases](https://github.com/XpressReal/armbian-build/releases/tag/v0.1.0-alpha)
+[Armbian releases](https://github.com/XpressReal/armbian-build/releases/)
 
 <br>
 
 ### Custom Linux image
 
 [XpressReal T3 Linux releases](https://github.com/xpressreal/linux-sdk/releases)
+
+Default password: `rtd1619b`
 
 <br>
 
