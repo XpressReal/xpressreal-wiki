@@ -48,7 +48,7 @@ Git and curl as the essential tools that need to be installed in the host OS, yo
 ```bash
 (outside)
 sudo apt install build-essential git-core gitk git-gui curl lvm2 thin-provisioning-tools \
-     python-pkg-resources python-virtualenv python-oauth2client xz-utils
+   python3-pkg-resources python3-virtualenv python3-oauth2client xz-utils
 ```
 
 ### Install Google depot_tools
@@ -155,6 +155,11 @@ $ repo sync -j8
 $ cd openfyde/chromium
 $ gclient sync
 ```
+
+:::note
+If gclient complains no `.gclient` file exists, just create `.gclient` manually and copy/paste the content of [gclient](https://github.com/openFyde/dotgclient/blob/main/dotgclient) to it.
+:::
+
 Fetching of Chromium OS source code may take more than 30 minutes depending on your connection speed, around 100GB of data will need to be downloaded primarily from googlesource.com, it'd be helpful if you have a decent internet speed to reach Google's server.
 
 Once `gclient sync` is completed, the chromium source folder is now fully set up.
@@ -203,6 +208,11 @@ $ cros build-image --board xpressreal-openfyde --no-enable-rootfs-verification
 ```
 
 It may take 10 to 30 minutes, mainly depending on the speed of your disk. It will be much faster on SSD than on HDD.
+
+:::note
+If `termina-dlc` was failed to install, add `terminal-dlc` to `DLC_FACTORY_INSTALL` in `chromite/lib/dlc_allowlist.py` and retry.
+
+:::
 
 ### Find your image
 
