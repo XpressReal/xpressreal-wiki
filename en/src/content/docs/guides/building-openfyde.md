@@ -192,6 +192,11 @@ $ cros build-packages --board=xpressreal-openfyde --no-withautotest
 # Append "--no-withautotest" to speed up the build process by skipping some tests
 ```
 
+:::note
+If `termina-dlc` was failed to build, add `termina-dlc` to `DLC_FACTORY_INSTALL` in `chromite/lib/dlc_allowlist.py` and retry.
+
+:::
+
 It may take hours depending on your processor power, your memory size, your disk speed and the quality of your internet connection. Here are some examples for you to adjust your expectations: 
 
 - On a decent machine with 4 cores 8 threads, 16GB memory, files on regular HDD, and 100Mb broadband, it takes about 15 to 16 hours for the command to finish.
@@ -208,11 +213,6 @@ $ cros build-image --board xpressreal-openfyde --no-enable-rootfs-verification
 ```
 
 It may take 10 to 30 minutes, mainly depending on the speed of your disk. It will be much faster on SSD than on HDD.
-
-:::note
-If `termina-dlc` was failed to install, add `terminal-dlc` to `DLC_FACTORY_INSTALL` in `chromite/lib/dlc_allowlist.py` and retry.
-
-:::
 
 ### Find your image
 
