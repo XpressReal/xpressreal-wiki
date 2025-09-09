@@ -157,7 +157,12 @@ $ gclient sync
 ```
 
 :::note
-If gclient complains no `.gclient` file exists, just create `.gclient` manually and copy/paste the content of [gclient](https://github.com/openFyde/dotgclient/blob/main/dotgclient) to it.
+If `gclient sync` failed with the following error, you need to create `.gclient` manually and copy/paste the content of [gclient](https://github.com/openFyde/dotgclient/blob/main/dotgclient) to it.
+
+```
+Error: client not configured; see 'gclient config'
+```
+
 :::
 
 Fetching of Chromium OS source code may take more than 30 minutes depending on your connection speed, around 100GB of data will need to be downloaded primarily from googlesource.com, it'd be helpful if you have a decent internet speed to reach Google's server.
