@@ -16,7 +16,7 @@ Whether it's for retail stores, campuses, buildings, or government offices, this
 Have the following ready:
 
 - An enterprise [FydeOS Management Cloud](https://admin.fydeos.io/) account  
-  - If you don’t have one, You only need to fill out a form to [try FydeOS Enterprise Solution](https://fydeos.io/enterprise-solution/request-demo/) for free.
+  - If you don’t have one, You only need to fill out a form to [try FydeOS Enterprise Solution](https://fydeos.io/enterprise-solution/free-trial/) for free.
 - An XpressReal T3 device and a monitor  
 ![XpressReal T3 Device](https://cdn-web.fydeos.io/Xpressreal_3f6cac8805.jpg)
 - A Zero-Touch Enrolment (ZTE) system image generated from FydeOS Management Cloud ([How to Generate a ZTE Image](https://enterprise.fydeos.io/wiki/Getting-Started/how_to_create_a_zte_image)) or a standard image downloaded from the official site  
