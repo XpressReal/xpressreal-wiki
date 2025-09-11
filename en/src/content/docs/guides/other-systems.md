@@ -8,11 +8,18 @@ In addition to openFyde/FydeOS, the XpressReal T3 supports other operating syste
 ## Install Custom Linux Image
 
 Our Linux OS images are built with the Yocto Project. Use `balenaEtcher` to flash a downloaded image to a microSD card, then boot your XpressReal T3 from it.
+
 Refer to the [Getting Started Guide](/guides/getting-started/) for flashing instructions.
 
 ## Install Armbian Image
 
 Armbian is a Debian-based Linux distribution that is optimised for ARM-based single-board computers (SBCs). It is a popular choice for developers and enthusiasts who want to run Linux on their XpressReal T3. You can download the image from our [GitHub Releases](https://github.com/XpressReal/armbian-build/releases) page and flash it to a microSD card using `balenaEtcher`. Then, boot your XpressReal T3 from the microSD card.
+
+## Install OpenWrt Image
+
+OpenWrt Project is a Linux operating system targeting embedded devices. Instead of trying to create a single, static firmware, OpenWrt provides a fully writable filesystem with package management. This makes it an excellent choice for network enthusiasts, developers, and power users who want to unlock advanced networking features on their XpressReal T3.
+
+To get started, download the latest OpenWrt image from our [GitHub Releases](https://github.com/XpressReal/openwrt/releases) page ([Which image to choose?](https://openwrt.org/docs/guide-user/installation/installation_methods/sd_card#which_image_to_chose)). Flash the image to a microSD card, insert it into your XpressReal T3, and power on the device to boot into OpenWrt.
 
 ## Install Home Assistant Operating System (HAOS) Image
 

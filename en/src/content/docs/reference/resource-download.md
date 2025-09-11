@@ -36,6 +36,12 @@ Image flashing tool: [balenaEtcher](https://etcher.balena.io)
 
 <br>
 
+### OpenWrt
+
+[OpenWrt releases](https://github.com/XpressReal/openwrt/releases)
+
+<br>
+
 ### Custom Linux image
 
 [XpressReal T3 Linux releases](https://github.com/xpressreal/linux-sdk/releases)
