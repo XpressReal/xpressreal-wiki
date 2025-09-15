@@ -14,6 +14,7 @@ export default defineConfig({
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Introduction', slug: 'guides/introduction' },
 						{ label: 'Getting started', slug: 'guides/getting-started' },
+						{ label: 'Passive PoE Support', slug: 'guides/passive-poe' },
 						{ label: 'Setup openFyde/FydeOS', slug: 'guides/openfyde-fydeos' },
 						{ label: 'Other systems', slug: 'guides/other-systems' },
 						{ label: 'Building openFyde', slug: 'guides/building-openfyde' },

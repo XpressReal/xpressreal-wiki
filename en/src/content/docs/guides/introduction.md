@@ -71,7 +71,7 @@ description: The introduction of XpressReal T3 SBC.
         <td align="center">Power supply</td>
         <td colspan="2" align="left">
             USB-C PD<br/>
-            GbE with Passive PoE (24V 1A)
+            GbE with <a href="../passive-poe">Passive PoE (24V 1A)</a>
         </td>
     </tr>
     <tr>
