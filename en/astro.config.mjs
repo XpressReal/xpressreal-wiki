@@ -20,6 +20,7 @@ export default defineConfig({
 						{ label: 'Building openFyde', slug: 'guides/building-openfyde' },
 						{ label: 'Building custom Linux', slug: 'guides/building-yocto' },
 						{ label: 'Unbrick the XpressReal T3', slug: 'guides/unbrick' },
+						{ label: 'Using LTE Modem with OpenWrt', slug: 'guides/openwrt-lte' },
 					],
 				},
 				{
