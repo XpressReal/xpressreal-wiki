@@ -20,7 +20,6 @@ export default defineConfig({
 						{ label: 'Building openFyde', slug: 'guides/building-openfyde' },
 						{ label: 'Building custom Linux', slug: 'guides/building-yocto' },
 						{ label: 'Unbrick the XpressReal T3', slug: 'guides/unbrick' },
-						{ label: 'Using LTE Modem with OpenWrt', slug: 'guides/openwrt-lte' },
 					],
 				},
 				{
@@ -32,6 +31,7 @@ export default defineConfig({
 					items: [
 						{ label: 'Setup FydeSign', slug: 'recipes/fydesign'},
 						{ label: 'Setup Home Assistant OS', slug: 'recipes/haos'},
+						{ label: 'Using LTE Modem with OpenWrt', slug: 'recipes/openwrt-lte' },
 					],
 				},
 			],
