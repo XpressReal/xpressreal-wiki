@@ -12,6 +12,7 @@ What you will need:
 
 ## Prerequisites
 Insert the EC25 module into the mini PCIe slot on the XpressReal board and ensure that it is properly seated. Connect the necessary antennas to the EC25 module for optimal signal reception.
+![XpressReal with EC25 module](../../../assets/openwrt/lte-module-installed.webp)
 
 ## Step 1: Check if the LTE modem is recognised
 The recommended way to use the EC25 is via QMI mode, which allows for better control and management of the modem.
@@ -42,22 +43,22 @@ After the modem restarts, check again if `/dev/cdc-wdm0` is present.
 
 ## Step 2: Configure the WWAN interface in the OpenWrt web interface
 1. Log in to the OpenWrt web interface (LuCI).
-![OpenWrt Web Interface](../../../assets/openwrt/luci.png)
+![OpenWrt Web Interface](../../../assets/openwrt/luci.webp)
 2. Navigate to **Network** > **Interfaces**.
 3. Click on **Add new interface...**.
 4. Set the following parameters:
     - **Name**: `wwan`  (or any name you prefer)
     - **Protocol**: `QMI`
-![Add wwan interface](../../../assets/openwrt/add-wwan.png)
+![Add wwan interface](../../../assets/openwrt/add-wwan.webp)
 5. Click **Create Interface**.
 6. In the new interface configuration page, set the following parameters:
     - **Device**: `/dev/cdc-wdm0`
     - **APN**: Set this to your network's APN (e.g. `internet` for many networks).
     - **Username**: Leave blank unless your network requires it.
     - **Password**: Leave blank unless your network requires it.
-![Choose modem device](../../../assets/openwrt/choose-modem.png)
+![Choose modem device](../../../assets/openwrt/choose-modem.webp)
 7. Go to the **Firewall Settings** tab and assign the `wwan` interface to the appropriate firewall zone (usually `wan`).
-![Select firewall zone](../../../assets/openwrt/firewall-zone.png)
+![Select firewall zone](../../../assets/openwrt/firewall-zone.webp)
 8. Click **Save & Apply**.
 
 ## Step 3: Verify the connection
