@@ -65,3 +65,7 @@ Default password: `rtd1619b`
 [XpressReal T3 Schematic v1.2](https://github.com/XpressReal/xpressreal/blob/main/hw/XpressReal_V1.2.pdf)
 
 [XpressReal T3 Component Layout Diagram v1.2](https://github.com/XpressReal/xpressreal/blob/main/hw/XpressReal_V1.20_component_diagram.pdf)
+
+### 3D Model
+
+[XpressReal T3 3D Model](../../../assets/xpressreal-3d-model.stp)
