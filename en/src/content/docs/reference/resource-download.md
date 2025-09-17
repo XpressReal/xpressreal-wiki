@@ -68,4 +68,4 @@ Default password: `rtd1619b`
 
 ### 3D Model
 
-[XpressReal T3 3D Model](../../../assets/xpressreal-3d-model.stp)
+[XpressReal T3 3D Model](https://github.com/XpressReal/xpressreal-wiki/blob/main/en/src/assets/xpressreal-3d-model.stp)
