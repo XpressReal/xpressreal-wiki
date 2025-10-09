@@ -19,6 +19,7 @@ export default defineConfig({
 						{ label: 'Other systems', slug: 'guides/other-systems' },
 						{ label: 'Building openFyde', slug: 'guides/building-openfyde' },
 						{ label: 'Building custom Linux', slug: 'guides/building-yocto' },
+						{ label: 'Building OpenWrt', slug: 'guides/building-openwrt' },
 						{ label: 'Unbrick the XpressReal T3', slug: 'guides/unbrick' },
 					],
 				},
