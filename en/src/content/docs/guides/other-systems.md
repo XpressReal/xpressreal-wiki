@@ -29,110 +29,58 @@ Home Assistant Operating System (formerly HassOS) is a Linux-based system optimi
 
 For more information, refer to our open-source [GitHub repository](https://github.com/XpressReal/Home-Assistant-Operating-System).
 
-## Install Android Image
+## Install AOSP Image
 
 :::caution
 
-If you have installed Android and want to revert to openFyde or another Linux system, you must do so via "Recovery Mode". 
-
-This process requires a USB-to-TTL converter. Please ensure you have this device, otherwise you will not be able to switch back from the Android system.
+This process will erase the whole eMMC, please backup your data before procced.
 
 :::
 
-Download the Android Image from our Resource Download page and extract the .zip archive. 
-You will find two folders inside: `lk` and `image`. The contents are used as follows: 
-files in the `lk` folder need to be uploaded to the XpressReal T3 through the serial port, 
-while files in the `image` folder need to be copied to a USB drive.
+You need to download both the `sdcard.img` and `xpressreal_t3-update.zip` files:
+- `sdcard.img` is a bootloader to put XpressReal T3 into fastboot mode
+- `xpressreal_t3-update.zip` is the actual AOSP image to flash into eMMC via fastboot
 
-### 1. Enter recovery mode
+### Prerequisite
 
-Follow the instructions in the [Unbrick the XpressReal T3](/guides/unbrick) to put your XpressReal T3 into Recovery mode.
+Install [Android platform tools](https://developer.android.com/tools/releases/platform-tools) for your OS.
+Windows users may need to install the [fastboot device driver](https://developer.android.com/studio/run/win-usb).
 
-### 2. Upload files with Y-modem
+### Prepare SDcard
 
-Press `h` in keyboard, then send `RTD1619B_hwsetting_BOOT_LPDDR4_32Gb_ddp_s1600_final.bin` file by Y-modem protocol:
+Flash the `sdcard.img` to a SD Card using `BalenaEtcher`(or other image writing tools), then plug the SD Card into T3 and power it on.
 
-![Sending file](../../../assets/android/y-modem-send.webp)
+### Connect T3 to computer
 
-Press `d` in keyboard, then send `uda_emmc.bind.bin` file, when it finished, press `g` to write uploaded file to eMMC.
-
-Press `d` in keyboard, then send `boot_emmc.bind.bin` file, when it finished, press `b1` and `b2` to write uploaded file to eMMC.
-
-### 3. Reboot to uboot
-
-After upload and write those files, replug the power supply to reboot XpressReal T3, it will enter uboot by default:
-
-![Uboot Prompt](../../../assets/android/uboot-prompt.webp)
-
-Enter the following commands to setup sysparam
+The SD Card bootloader will put T3 into **fastboot mode** automatically. You need to connect T3 to your computer with an USB cable(**using the USB Type-A port of T3**), if everything goes well, you can list it with the following command:
 
 ```
-sysparam default
-sysparam save
+$ fastboot devices
+xpressreal(emmc)	 fastboot
 ```
 
-### 4. Copy image to USB drive
+If there is no device listed, confirm you used the correct USB port and get fastboot driver installed.
 
-Copy all the files in `image` folder to the root of the USB drive, then plug the USB drive to the USB 3.0 Type-C port.
+### Flash AOSP
 
-:::caution
+Use the following commands to flash AOSP to T3's eMMC:
 
-Make sure the file system of your USB drive is `FAT32` and the sector size of `FAT32` is `512` because
-the uboot XpressReal T3 used only support this sector size.
-
-Your can prepare the file system with the this command in a Linux console:
-```bash
-mkfs.vfat -S 512 /dev/sdXXX
+```
+$ fastboot oem format
+$ fastboot update -w xpressreal_t3-update.zip
 ```
 
-:::
+### Done
+XpressReal T3 will reboot to AOSP automatically when finished. The SD Card is not need after the AOSP flashing process done, you can remove it.
 
-### 5. Install Android to eMMC
+### Trouble shooting
 
-Plug the USB drive to XpressReal T3, type `usb start` to confirm your USB drive has been recognised as `Mass Storage Device`,
-then type `boot ru` in uboot to start the installation:
+- If the `fastboot update -w xpressreal_t3-update.zip` command hang, just `ctrl-c` and retry.
+- You can force T3 enter fastboot mode by pressing the "install/user" button during power on for ~10s.
 
-![Android Install](../../../assets/android/android-install.webp)
+### Restore to FydeOS
 
-Wait for a while, when it finishes, XpressReal T3 will reboot to Android.
-
-![Android desktop](../../../assets/android/android-desktop.webp)
-
-:::note
-
-### Restoring openFyde from an Android System
-
-To restore openFyde from Android, you need to flash the firmware of the XpressReal T3 to the stock one, 
-then refer to the [Getting Started](/guides/getting-started) guide to install openFyde OS.
-
-Use the following instructions to restore to stock firmware.
-
-* download stock firmware from https://github.com/XpressReal/xpressreal/tree/main/recovery-fw
-
-* connect XpressReal T3 with your computer and copy the downloaded firmware to Android with `adb`
-
-```bash
-adb push Downloads/rtd1619b_emmc_bind_4gb.bin /storage/emulated/0/Download/rtd1619b_emmc_bind_4gb.bin
-```
-
-* flash firmware
-
-```bash
-adb shell # connect to android shell with adb
-su        # change to root
-
-echo 0 > /sys/block/mmcblk0boot0/force_ro # disable eMMC boot area read-only
-echo 0 > /sys/block/mmcblk0boot1/force_ro
-
-dd if=//storage/emulated/0/Download/rtd1619b_emmc_bind_4gb.bin of=/dev/block/mmcblk0boot0 bs=4096 # flash firmware
-dd if=//storage/emulated/0/Download/rtd1619b_emmc_bind_4gb.bin of=/dev/block/mmcblk0boot1 bs=4096
-```
-
-* the firmware of XpressReal T3 has been restored, you can install openFyde now
-
-If the Android system is broken or adb is not available, please refer to the instructions in the [Unbrick the XpressReal T3](/guides/unbrick) to revert your XpressReal T3 to openFyde.
-
-:::
+If you want to restore to FydeOS or other OS, just follow the installation guide of it.
 
 ## Further reading
 
