@@ -33,6 +33,7 @@ export default defineConfig({
 						{ label: 'Setup FydeSign', slug: 'recipes/fydesign'},
 						{ label: 'Setup Home Assistant OS', slug: 'recipes/haos'},
 						{ label: 'Using LTE Modem with OpenWrt', slug: 'recipes/openwrt-lte' },
+						{ label: 'Run neural network with NPU', slug: 'recipes/npu'},
 					],
 				},
 			],
