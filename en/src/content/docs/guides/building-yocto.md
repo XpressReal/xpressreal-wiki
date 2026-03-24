@@ -64,11 +64,11 @@ $ mkdir yocto
 # clone poky
 $ git clone https://git.yoctoproject.org/poky -b scarthgap
 $ cd poky
-$ git checkout dabe9e157f
+$ git checkout 6b08410d0e
 # clone meta-openembedded
 $ git clone https://github.com/openembedded/meta-openembedded.git -b scarthgap
 $ cd meta-openembedded
-$ git checkout 2338409efc
+$ git checkout fdd1894976
 ```
 
 ## Fetch dependent meta
@@ -84,6 +84,21 @@ $ git clone https://github.com/nnstreamer/meta-neural-network.git -b scarthgap
 $ pushd meta-neural-network
 $ git checkout c14458c94e
 $ popd
+# clone meta-browser
+$ git clone https://github.com/OSSystems/meta-browser.git -b scarthgap
+$ pushd meta-browser
+$ git checkout 168d284276
+$ popd
+# clone meta-clang
+$ git clone https://github.com/kraj/meta-clang.git -b scarthgap-clang20
+$ pushd meta-clang
+$ git checkout 76596813cd
+$ popd
+# clone meta-lts-mixins
+$ git clone https://git.yoctoproject.org/meta-lts-mixins -b scarthgap/rust
+$ pushd meta-lts-mixins
+$ git checkout 96deb45139
+$ popd
 ```
 
 ## Fetch XpressReal T3 SDK
@@ -98,7 +113,7 @@ $ mv linux-sdk/meta-xpressreal poky/
 
 ## Download prebuilt rootfs
 
-Download the prebuilt rootfs from [Prebuilt rootfs](https://github.com/XpressReal/linux-sdk/releases/tag/prebuilt-rootfs),
+Download the prebuilt rootfs from [Prebuilt rootfs](https://github.com/XpressReal/linux-sdk/releases/tag/prebuilt-rootfs-v2.5.0),
 place the downloaded prebuilt rootfs files to `meta-xpressreal/recipes-xpressreal/prebuilt-rootfs/files/`.
 
 ## Building system configuration
