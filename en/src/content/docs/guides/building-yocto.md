@@ -123,6 +123,12 @@ $ cd yocto/poky
 $ TEMPLATECONF=meta-xpressreal/conf/templates/default source oe-init-build-env build
 ```
 
+Open `build/conf/local.conf` and ensure the `MACHINE` is set to `xpressreal-rtd1619b`:
+
+```conf
+MACHINE ??= "xpressreal-rtd1619b"
+```
+
 ## Build Linux image
 
 Now you can build a Linux image with `bitbake` command.
