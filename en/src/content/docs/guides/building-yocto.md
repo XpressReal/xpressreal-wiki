@@ -57,69 +57,60 @@ You need to ensure you are using `bash` as your default `$SHELL`.
 
 ## Fetch `yocto`
 
-Fetch Yocto building system(scarthgap branch) from upstream.
+Fetch the Yocto building system (scarthgap branch, poky 5.0.18) from upstream.
 
 ```bash
-$ mkdir yocto
 # clone poky
 $ git clone https://git.yoctoproject.org/poky -b scarthgap
 $ cd poky
-$ git checkout 6b08410d0e
+$ git checkout b56134ff90
 # clone meta-openembedded
-$ git clone https://github.com/openembedded/meta-openembedded.git -b scarthgap
-$ cd meta-openembedded
-$ git checkout fdd1894976
+$ git clone https://git.openembedded.org/meta-openembedded
+$ git -C meta-openembedded checkout fdd1894976 -b scarthgap
 ```
 
 ## Fetch dependent meta
+
+All the layers below are cloned inside the `poky` directory, where the
+previous step left you.
+
 ```bash
-$ cd yocto/poky
 # clone meta-qt5
-$ git clone https://github.com/meta-qt5/meta-qt5.git -b scarthgap
-$ pushd meta-qt5
-$ git checkout eb82841826
-$ popd
+$ git clone https://github.com/meta-qt5/meta-qt5
+$ git -C meta-qt5 checkout eb82841826 -b scarthgap
 # clone meta-neural-network
-$ git clone https://github.com/nnstreamer/meta-neural-network.git -b scarthgap
-$ pushd meta-neural-network
-$ git checkout c14458c94e
-$ popd
+$ git clone https://github.com/nnstreamer/meta-neural-network
+$ git -C meta-neural-network checkout c14458c94e -b scarthgap
 # clone meta-browser
-$ git clone https://github.com/OSSystems/meta-browser.git -b scarthgap
-$ pushd meta-browser
-$ git checkout 168d284276
-$ popd
+$ git clone https://github.com/OSSystems/meta-browser
+$ git -C meta-browser checkout 168d284276 -b scarthgap
 # clone meta-clang
-$ git clone https://github.com/kraj/meta-clang.git -b scarthgap-clang20
-$ pushd meta-clang
-$ git checkout 76596813cd
-$ popd
+$ git clone https://github.com/kraj/meta-clang
+$ git -C meta-clang checkout 76596813cd -b scarthgap-clang20
 # clone meta-lts-mixins
-$ git clone https://git.yoctoproject.org/meta-lts-mixins -b scarthgap/rust
-$ pushd meta-lts-mixins
-$ git checkout 96deb45139
-$ popd
+$ git clone https://git.yoctoproject.org/meta-lts-mixins
+$ git -C meta-lts-mixins checkout 96deb45139 -b scarthgap/rust
 ```
 
 ## Fetch XpressReal T3 SDK
 
-Fetch XpressReal T3 SDK from [XpressReal T3 SDK](#sdk-download), then uncompress it to yocto.
+Clone the XpressReal T3 SDK and move its `meta-xpressreal` layer into `poky`.
 
 ```bash
-$ cd yocto
+$ cd ..
 $ git clone https://github.com/XpressReal/linux-sdk
 $ mv linux-sdk/meta-xpressreal poky/
 ```
 
 ## Download prebuilt rootfs
 
-Download the prebuilt rootfs from [Prebuilt rootfs](https://github.com/XpressReal/linux-sdk/releases/tag/prebuilt-rootfs-v2.5.0),
-place the downloaded prebuilt rootfs files to `meta-xpressreal/recipes-xpressreal/prebuilt-rootfs/files/`.
+Download the prebuilt rootfs from [Prebuilt rootfs](https://github.com/XpressReal/linux-sdk/releases/tag/prebuilt-rootfs-v2.7.1),
+place the downloaded prebuilt rootfs files to `poky/meta-xpressreal/recipes-xpressreal/prebuilt-rootfs/files/`.
 
 ## Building system configuration
 
 ```bash
-$ cd yocto/poky
+$ cd poky
 $ TEMPLATECONF=meta-xpressreal/conf/templates/default source oe-init-build-env build
 ```
 
@@ -147,7 +138,7 @@ The following bitbake targets are supported:
 
 :::tip
 
-the `debian-image` target can generate different images based on the configuration in `yocto/poky/build/conf/local.conf`:
+the `debian-image` target can generate different images based on the configuration in `poky/build/conf/local.conf`:
 
 * `OVERRIDES:append = ":ubuntu"`: generate image with `ubuntu` rootfs instead of `debian`
 * `MACHINE_FEATURES:append = " xdesktop"`: generate image with GUI support
