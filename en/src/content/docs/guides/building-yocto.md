@@ -57,13 +57,13 @@ You need to ensure you are using `bash` as your default `$SHELL`.
 
 ## Fetch `yocto`
 
-Fetch the Yocto building system (scarthgap branch, poky 5.0.18) from upstream.
+Fetch the Yocto building system (scarthgap branch, poky 5.0.20) from upstream.
 
 ```bash
 # clone poky
 $ git clone https://git.yoctoproject.org/poky -b scarthgap
 $ cd poky
-$ git checkout b56134ff90
+$ git checkout 64e69ed237
 # clone meta-openembedded
 $ git clone https://git.openembedded.org/meta-openembedded
 $ git -C meta-openembedded checkout fdd1894976 -b scarthgap
